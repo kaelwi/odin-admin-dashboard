@@ -122,7 +122,7 @@ img {
 }
 
 .projects > * {
-  border: 1px solid black;
+  border-left: 12px solid var(--background-color-widgets);
   height: 200px;
   min-width: 300px;
   background-color: var(--foreground-color);
