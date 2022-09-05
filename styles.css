@@ -73,6 +73,7 @@ img {
   top: 0;
   align-items: center;
   color: black;
+  padding-right: 30px;
 }
 
 .header > * {
@@ -85,7 +86,7 @@ img {
   gap: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 30px;
+  padding-right: 2%;
 }
 
 .main {
@@ -93,25 +94,20 @@ img {
   grid-column: 2/3;
   background: var(--background-color);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 60px 1fr;
   height: 100%;
   overflow: auto;
+  padding-right: 2%;
 }
 
 .main .projects-heading, .main .announcements-heading {
-  position: sticky;
-  top: 0;
   background: var(--background-color);
   display: flex;
   align-items: flex-end;
   padding: 10px;
 }
 
-.content {
-  position: sticky;
-  top: 60px;
-}
 
 .projects {
   display: grid;
@@ -204,4 +200,22 @@ hr {
   align-items: center;
   gap: 15px;
   height: 50px;
+}
+
+.icons {
+  height: 20%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: end;
+  gap: 25px;
+}
+
+.project {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
