@@ -103,6 +103,9 @@ img {
   position: sticky;
   top: 0;
   background: var(--background-color);
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
 }
 
 .content {
@@ -124,6 +127,7 @@ img {
   min-width: 300px;
   background-color: var(--foreground-color);
   margin: 10px;
+  border-radius: 10px;
 }
 
 #search {
@@ -166,4 +170,38 @@ button {
 
 #bell {
   max-height: 70%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.announcements, .trending-content {
+  background-color: var(--foreground-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.trending > h2 {
+  margin: 40px 10px 20px 10px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.trending-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trending-content > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
 }
